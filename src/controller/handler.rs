@@ -12,7 +12,6 @@ use serde::{Deserialize, Serialize};
 use crate::services::decoding_service::DecodingService;
 
 pub struct Handler<'a>{
-    // Reference and type both live for 'a
     pub decoding_service: DecodingService<'a>,
 }
 #[derive(Deserialize, Serialize)]
